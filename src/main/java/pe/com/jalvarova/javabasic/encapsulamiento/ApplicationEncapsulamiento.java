@@ -3,23 +3,23 @@ package pe.com.jalvarova.javabasic.encapsulamiento;
 public class ApplicationEncapsulamiento {
 
 	public static void main(String[] args) {
-		Persona persona = new Persona("Alvaro Daniel", "Aguinaga Delgado", true);
-		Persona persona2 = new Persona("Diego Renato", "Aguinaga Delgado", true);
+		Person person = new Person("Alvaro Daniel", "Aguinaga Delgado", true);
+		Person person2 = new Person("Diego Renato", "Aguinaga Delgado", true);
 
-		System.out.println(persona.nombreCompleto());
-		System.out.println(persona2.nombreCompleto());
+		System.out.println(person.nombreCompleto());
+		System.out.println(person2.nombreCompleto());
 
-		validatePersona(persona);
-		persona.setBorrado(false);
-		validatePersona(persona);
+		validatePerson(person);
+		person.setBorrado(false);
+		validatePerson(person);
 
-		System.out.println(Persona.getSizePerson());
+		System.out.println(Person.getSizePerson());
 	}
 
-	private static void validatePersona(Persona persona) {
-		if (persona.isBorrado()) {
+	private static void validatePerson(Person person) {
+		if (person.isBorrado()) {
 			System.out.println("\nNueva Persona Creada");
-			persona.print();
+			person.print();
 		} else {
 			System.err.println("\nPersona Eliminado");
 		}

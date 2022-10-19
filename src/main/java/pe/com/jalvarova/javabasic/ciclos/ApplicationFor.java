@@ -3,9 +3,9 @@ package pe.com.jalvarova.javabasic.ciclos;
 public class ApplicationFor {
 
 	public static void main(String[] args) {
-	     int limite = 10;
-	        for (int contador = 0; contador < limite; contador++) {
-	            System.out.println("contador = " + contador);
+	     int limit = 10;
+	        for (int count = 0; count < limit; count++) {
+	            System.out.println("count = " + count);
 	        }
 
 	}

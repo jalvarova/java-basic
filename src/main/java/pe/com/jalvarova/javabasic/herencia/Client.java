@@ -4,14 +4,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringJoiner;
 
-public class Cliente extends Persona {
+public class Client extends Person {
 
 	private int idCliente;
 	private Date fechaRegistro;
 	private boolean vip;
 	private static int contadorCliente;
 
-	public Cliente(String nombre, Date fechaRegistro, boolean vip) {
+	public Client(String nombre, Date fechaRegistro, boolean vip) {
 		super(nombre);
 		contadorCliente++;
 		this.idCliente = contadorCliente;

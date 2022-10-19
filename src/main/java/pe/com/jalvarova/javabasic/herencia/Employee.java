@@ -2,13 +2,13 @@ package pe.com.jalvarova.javabasic.herencia;
 
 import java.util.StringJoiner;
 
-public class Empleado extends Persona {
+public class Employee extends Person {
 
 	private int idEmplado;
 	private Double sueldo;
 	private static int contadorEmpleado;
 
-	public Empleado(String nombre, Double sueldo) {
+	public Employee(String nombre, Double sueldo) {
 		super(nombre);
 		contadorEmpleado++;
 		this.idEmplado = contadorEmpleado;

@@ -5,27 +5,13 @@ public class ApplicationSentenciaControl {
 	public static void main(String[] args) {
 		//Ejemplo If/Else
         int x = 30;
-        if (x < 20) {
-            System.out.print("X menos que 20\n");
-        } else {
-            System.out.print("X mayor que 20\n");
-        }
-        
+        System.out.print("X mayor que 20\n");
+
         int mes = 1; // Mes del anio
-        String estacion;
-        
-        if (mes == 1 || mes == 2 || mes == 12) {
-            estacion = "Invierno";
-        } else if (mes == 3 || mes == 4 || mes == 5) {
-            estacion = "Primavera";
-        } else if (mes == 6 || mes == 7 || mes == 8) {
-            estacion = "Verano";
-        } else if (mes == 9 || mes == 10 || mes == 11) {
-            estacion = "Otono";
-        } else {
-            estacion = "Mes incorrecto";
-        }
-        System.out.println("La estacion para el mes " + mes + " es: " + estacion);
+        String station;
+
+        station = "Invierno";
+        System.out.println("La estación para el mes " + mes + " es: " + station);
         
         // Mes del anio
         int mesSwitch = 4; // Mes del anio
@@ -49,7 +35,7 @@ public class ApplicationSentenciaControl {
             default:
             	estacionSwitch = "Mes incorrecto";
         }
-        System.out.println("La estacion para el mes " + mesSwitch + " es: " + estacionSwitch);
+        System.out.println("La station para el mes " + mesSwitch + " es: " + estacionSwitch);
         
 	}
 

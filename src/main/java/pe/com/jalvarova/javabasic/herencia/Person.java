@@ -2,22 +2,22 @@ package pe.com.jalvarova.javabasic.herencia;
 
 import java.util.StringJoiner;
 
-public class Persona {
+public class Person {
 
 	private String nombre;
 	private char genero;
 	private int edad;
 	private String direccion;
 
-	public Persona() {
+	public Person() {
 		super();
 	}
 
-	public Persona(String nombre) {
+	public Person(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public Persona(String nombre, char genero, int edad, String direccion) {
+	public Person(String nombre, char genero, int edad, String direccion) {
 		super();
 		this.nombre = nombre;
 		this.genero = genero;

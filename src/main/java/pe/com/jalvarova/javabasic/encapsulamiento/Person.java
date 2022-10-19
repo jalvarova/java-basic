@@ -2,7 +2,7 @@ package pe.com.jalvarova.javabasic.encapsulamiento;
 
 import java.util.StringJoiner;
 
-public class Persona {
+public class Person {
 
 //	Atributos de clase
 	private int codigo;
@@ -13,7 +13,7 @@ public class Persona {
 	private boolean borrado;
 	private static int contadorPersonas;
 
-	public Persona( String nombre, String apellido, boolean borrado) {
+	public Person(String nombre, String apellido, boolean borrado) {
 		super();
 		contadorPersonas++;
 		this.codigo = contadorPersonas;
@@ -53,7 +53,7 @@ public class Persona {
 		this.borrado = borrado;
 	}
 
-	public Persona print() {
+	public Person print() {
 		System.out.println(toString());
 		return this;
 	}
